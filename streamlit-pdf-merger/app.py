@@ -1,6 +1,7 @@
 import streamlit as st
 from PyPDF2 import PdfMerger
 import os
+import io
 
 UPLOAD_FOLDER = "uploads"
 MERGED_FILE = "merged_output.pdf"
@@ -31,10 +32,21 @@ if st.button("Merge PDFs"):
         merger.write(merged_file_path)
         merger.close()
 
+        # Read the merged PDF file
+        with open(merged_file_path, "rb") as file:
+            pdf_bytes = file.read()
+        
+        # Create a download button for the merged PDF
+        st.success("PDFs merged successfully!")
+        st.download_button(
+            label="Download Merged PDF",
+            data=pdf_bytes,
+            file_name="merged_document.pdf",
+            mime="application/pdf"
+        )
+
+        # Clean up uploaded files
         for path in file_paths:
             os.remove(path)
-
-        st.success("PDFs merged successfully!")
-        st.markdown(f"[Download the merged PDF](/{MERGED_FILE})")
     else:
         st.error("No files uploaded")
