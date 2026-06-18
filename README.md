@@ -1,36 +1,27 @@
-# Pdf Merger
+# PDF Merger
 
-Python utility for merging PDF files.
+A Python utility for merging PDF files.
 
-## Overview
+## Purpose
 
-This is a Automation utility prototype repository. It is part of my broader GitHub portfolio showing hands-on work across AI, web development, automation, and software engineering fundamentals.
+Combining multiple PDF files manually can be tedious and error-prone. This project explores a small utility workflow for selecting PDFs and producing one merged document.
 
-## What It Demonstrates
+## What This Shows
 
-- Practical implementation and experimentation rather than only theory.
-- Familiarity with the repository's core stack and development workflow.
-- Iterative learning through small projects, exercises, or prototypes.
+- PDF automation
+- Python utility scripting
+- Document workflow tooling
 
-## Tech Stack
+## Stack
 
-- Primary language: Python
-- Topics: automation, pdf, python
-
-## Repository Structure
-
-- Top-level folders: streamlit-pdf-merger
-- Top-level files: No top-level files detected.
-
-## Status
-
-This is a learning/prototype repository kept public to show practice, experimentation, and growth.
+- Python
+- PDF processing
 
 ## Next Improvements
 
-- Add screenshots, sample outputs, or a short demo where relevant.
-- Expand setup instructions for local development.
-- Document the main learning outcome, architecture, and edge cases.
+- Add usage examples
+- Add sample input/output screenshots
+- Document supported file order behavior
 
 ## Author
 
